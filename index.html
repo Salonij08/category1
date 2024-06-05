@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Links</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Font and Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('bg1.jpg');
+             background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            /* background: linear-gradient(270deg, #ff00f2); */
+            /* background-size: 400% 400%; */
+            animation: gradientBackground 140s ease infinite;
+            color: black;
+            height: 100vh;
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            padding-top: 8px;
+        }
+        .main-title {
+            font-size: 3rem; /* Increase font size */
+            font-weight: bold;
+            padding-bottom: 2px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h1 {
+            background-color: transparent;
+            color: black;
+            text-align: center;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px;
+            width: 200px;
+            height: 100px;
+            border-radius: 20px;
+            background: linear-gradient(270deg,#3298ff49, #000d1e49);
+            background-color: #69a3e0e4;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit color from parent */
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h3 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 118px;
+            margin-inline-end: 118px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+        .card-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .card-title {
+            font-size: 1.2rem; /* Increase font size */
+            color: #ffffff;
+        }
+        .logo {
+            position: absolute;
+            transition: transform 0.3s ease;
+        }
+        .logo.top-right {
+            top: 20px;
+            right: 20px;
+        }
+        .logo.top-left {
+            top: 20px;
+            left: 20px;
+        }
+        .description-container {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+        .logo:hover {
+            transform: scale(1.1);
+        }
+        .category-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo top-left">
+        <img src="image (2).png" alt="Logo" width="200">
+    </div>
+    <div class="logo top-right">
+        <img src="HiveMinds (1).jpg" alt="Logo" width="200">
+    </div>
+    <div class="main-title">Market Intelligence Dashboard</div>
+    <h2>Track eCommerce category insights by integrating Amazon Pi and Helium 10 data</h2>
+    <div class="description-container">
+        <h3>Marketing Intelligence Dashboard (MInd) offers e-commerce insights, competitor monitoring, and market intelligence.</h3> 
+            <h3>Features include ad funnel comparison, SKU sales share, best seller ranking, share of voice, price monitoring, and product feature comparison. Developed by Hiveminds, MInd offers top-tier market intelligence.</h3>
+    </div>
+    <div class="container text-center">
+        <h1>Please Select Your Category</h1>
+        <div class="category-container">
+            <div class="card-row">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiZTcwNmM5ZjctN2Q2OC00MDljLWE0NGQtMzc0NTIyZTM3ZjRhIiwidCI6ImFiMWM5NTBhLTE1MDAtNDUxOC1hOGQyLTBlZmM5NmUxZTJmOCJ9" target="_blank" class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Water Purifier</h5>
+                    </div>
+                </a>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjdmNjJlMjItNTUyMC00MGUxLWEzNTItNjU3ZmEzMjg4MzVlIiwidCI6ImFiMWM5NTBhLTE1MDAtNDUxOC1hOGQyLTBlZmM5NmUxZTJmOCJ9" target="_blank" class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Watches</h5>
+                    </div>
+                </a>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiODNkMzMyZTItN2QwZi00ZjlhLTg2MTctYTE3N2FiNTRkMzM2IiwidCI6ImFiMWM5NTBhLTE1MDAtNDUxOC1hOGQyLTBlZmM5NmUxZTJmOCJ9" target="_blank" class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Nicotin</h5>
+                    </div>
+                </a>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMTEwYmE2MjItOGRhZC00NmU0LTg3ZDMtYjk1OTQxNmU0ZmI2IiwidCI6ImFiMWM5NTBhLTE1MDAtNDUxOC1hOGQyLTBlZmM5NmUxZTJmOCJ9" target="_blank" class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Oats</h5>
+                    </div>
+                </a>
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiYjBhNDM0ZWUtOTE4Ny00ZDMxLWJhN2YtNzdhODYxNjdlN2FkIiwidCI6ImFiMWM5NTBhLTE1MDAtNDUxOC1hOGQyLTBlZmM5NmUxZTJmOCJ9" target="_blank" class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Hair Oil</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional for some interactive features) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
